@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Signout">
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/regbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="110dp"
+            android:layout_height="31dp"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="110dp"
+            android:layout_height="31dp"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="110dp"
+            android:layout_height="31dp"
+            android:text="@string/other" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/penicon1"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/enter_username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:drawableLeft="@drawable/penicon1" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/phone1"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/enter_phone_no"
+        android:inputType="phone"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        android:drawableLeft="@drawable/phone1" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/mail1"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/enter_email_id"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        android:drawableLeft="@drawable/mail1" />
+
+    <Button
+        android:id="@+id/regbutton"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:background="#ff4583"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        android:drawableLeft="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="128dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/image_for_signup"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signup" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:drawableLeft="@drawable/lock" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/ic_date_3"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/dob"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        android:drawableLeft="@drawable/ic_date_3"
+        android:gravity="start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

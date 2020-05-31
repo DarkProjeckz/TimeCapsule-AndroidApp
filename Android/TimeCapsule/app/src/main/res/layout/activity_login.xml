@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="248dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="93dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter Username"
+        android:drawableStart="@drawable/penicon1"
+        android:drawablePadding="15dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        android:layout_marginLeft="92dp"
+        android:layout_marginRight="93dp"
+        android:drawableLeft="@drawable/penicon1" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="248dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="93dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginLeft="92dp"
+        android:layout_marginRight="93dp"
+        android:drawableLeft="@drawable/lock" />
+
+    <Button
+        android:id="@+id/logbutton"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="90dp"
+        android:background="#ff4583"
+        android:text="@string/login"
+        android:textColor="#000706"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        android:layout_marginLeft="89dp"
+        android:layout_marginRight="90dp" />
+
+    <Button
+        android:id="@+id/regbutton"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="90dp"
+        android:background="#ff4583"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logbutton"
+        android:layout_marginLeft="89dp"
+        android:layout_marginRight="90dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="122dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="85dp"
+        android:contentDescription="@string/image_for_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
